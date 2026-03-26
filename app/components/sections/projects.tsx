@@ -28,7 +28,18 @@ export default function ProjectsSection() {
       {companies.map((company) => (
         <div key={company.name} className="mb-16">
           <div className="bg-blue-100 px-6 py-4 rounded-lg mb-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-blue-900">{company.name}</h2>
+            {company.url ? (
+              <a
+                href={company.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl font-bold text-blue-900 underline"
+              >
+                {company.name}
+              </a>
+            ) : (
+              <h2 className="text-2xl font-bold text-blue-900">{company.name}</h2>
+            )}
             {company.role && <p className="text-blue-800 italic mt-1">{company.role}</p>}
           </div>
 
@@ -68,7 +79,18 @@ export default function ProjectsSection() {
                 )}
 
                 <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-blue-800 mb-2">{project.name}</h3>
+                  {project.url ? (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xl font-bold text-blue-800 mb-2 underline"
+                    >
+                      {project.name}
+                    </a>
+                  ) : (
+                    <p className="text-xl font-bold text-blue-800 mb-2">{project.name}</p>
+                  )}
                   <p className="text-blue-700 text-sm mb-4 flex-1">{project.overview}</p>
 
                   {project.stack.length > 0 && (

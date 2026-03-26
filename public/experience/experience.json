@@ -2,6 +2,7 @@
   "companies": [
     {
       "name": "Car.info",
+      "url": "https://www.car.info/",
       "role": "Full Stack Developer",
       "duration": {
         "start": "",
@@ -63,6 +64,7 @@
     },
     {
       "name": "Active Lamp",
+      "url": "https://activelamp.com/",
       "role": "Software Engineer",
       "duration": {
         "start": "",
@@ -72,7 +74,7 @@
       "projects": [
         {
           "name": "upTape",
-          "url": "",
+          "url": "https://uptape.com/",
           "role": "Frontend Developer",
           "overview": "A lead distribution and tracking platform for automotive sales teams.",
           "responsibilities": [
@@ -92,11 +94,11 @@
           ],
           "metrics": {},
           "stack": ["svelte", "typescript", "tailwind", "scss", "html", "css", "typescript"],
-          "images": ["/img/upTape/home.png", "/img/upTape/home.png"]
+          "images": ["/img/upTape/home.png", "/img/uptape/uptape_home_1.png"]
         },
         {
           "name": "upCrm",
-          "url": "",
+          "url": "https://upcrm.com/",
           "role": "Frontend Developer",
           "overview": "A CRM platform designed for managing customer interactions and sales pipelines.",
           "responsibilities": [
@@ -112,12 +114,13 @@
           ],
           "metrics": {},
           "stack": ["svelte", "typescript", "tailwind", "scss", "html", "css", "typescript"],
-          "images": ["/img/upCrm/home.png", "/img/upCrm/home.png"]
+          "images": ["/img/upCrm/home.png", "/img/upCrm/upcrm_home_1.png"]
         }
       ]
     },
     {
       "name": "Hipe Japan INC",
+      "url": "https://en.hipe.asia/",
       "role": "Full Stack Developer",
       "duration": {
         "start": "",
@@ -127,7 +130,7 @@
       "projects": [
         {
           "name": "AceProQuiz",
-          "url": "",
+          "url": "https://q-chan.site/",
           "role": "Full Stack Developer",
           "overview": "An event aggregation and listing system that collects and organizes event data into a structured, searchable interface. Implemented dynamic content handling and efficient data presentation for better user navigation.",
           "responsibilities": [
@@ -143,11 +146,11 @@
           ],
           "metrics": {},
           "stack": ["php", "laravel", "javascript", "mysql", "jquery"],
-          "images": ["/img/acepro/home.png", "/img/acepro/home.png"]
+          "images": ["/img/acepro/home.png", "/img/acepro/aceprop_home_1.png"]
         },
         {
           "name": "Anicom jobs",
-          "url": "",
+          "url": "https://www.anicomjobs.com/",
           "role": "Full Stack Developer",
           "overview": "A niche job platform connecting animal care professionals (veterinarians, groomers, and staff) with employers. Built features for job posting, applicant management, and optimized matching workflows to streamline hiring",
           "responsibilities": [
@@ -163,11 +166,11 @@
           ],
           "metrics": {},
           "stack": ["php", "laravel", "javascript", "mysql", "jquery", "scss"],
-          "images": ["/img/acepro/home.png", "/img/acepro/home.png"]
+          "images": ["/img/anicom/home.png", "/img/anicom/anicom_home_1.png"]
         },
         {
           "name": "Premium water",
-          "url": "",
+          "url": "https://premium-water.co.jp/",
           "role": "Full Stack Developer",
           "overview": "A large-scale corporate site for a Japanese subscription-based water service.",
           "responsibilities": [
@@ -183,7 +186,7 @@
           ],
           "metrics": {},
           "stack": ["php", "laravel", "javascript", "mysql", "liveWire", "jquery", "scss"],
-          "images": ["/img/premiumWater/home.png", "/img/premiumWater/home.png"]
+          "images": ["/img/premiumWater/home.png", "/img/premiumWater/premium_water_home_1.png"]
         }
       ]
     },
@@ -216,6 +219,7 @@
     },
     {
       "name": "UCMED",
+      "url": "https://ucmed.ph/",
       "role": "Full Stack Developer",
       "duration": {
         "start": "",
