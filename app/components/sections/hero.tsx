@@ -71,10 +71,10 @@ export default function HeroSection() {
         )}
 
         {/* Actions */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <Button variant="secondary" label={{ text: 'Contact Me' }} />
           <Button variant="light" label={{ text: 'View Projects' }} />
-        </div>
+        </div> */}
 
         {/* Contact Info */}
         <div className="flex gap-6 mt-6 justify-center lg:justify-start text-sm text-blue-600">
