@@ -1,0 +1,28 @@
+{
+  "name": "John Detomal",
+  "title": "Full Stack Developer",
+  "years_of_experience": 6,
+  "description": "I create elegant, user-friendly applications with a modern touch and clean code structure.",
+  "avatar": "/img/profile/avatar.png",
+  "contact": {
+    "email": "jdetomal469@gmail.com",
+    "phone": "09153911270",
+    "location": "Philippines"
+  },
+  "profiles": {
+    "linkedin": "https://www.linkedin.com/in/john-lloyd-detomal-1288b5251?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    "github": "https://github.com/John-detomal",
+    "stackoverflow": "https://stackoverflow.com/users/14211983/john-lloyd-detomal"
+  },
+  "skills_highlight": [
+    "PHP",
+    "Laravel",
+    "vue js",
+    "Quasar Framework",
+    "Web Scraping",
+    "Next.js",
+    "TypeScript",
+    "MySQL"
+  ],
+  "availability": "Open to freelance and remote opportunities"
+}

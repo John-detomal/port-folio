@@ -1,0 +1,245 @@
+{
+  "companies": [
+    {
+      "name": "Car.info",
+      "role": "Full Stack Developer",
+      "duration": {
+        "start": "",
+        "end": ""
+      },
+      "summary": "Worked on large-scale automotive data scraping and processing systems, scaling datasets from hundreds of thousands to tens of millions of records.",
+      "projects": [
+        {
+          "name": "Distributed Scraping & Data Pipeline",
+          "url": "",
+          "role": "Backend Engineer",
+          "overview": "Designed and maintained a scalable scraping system for extracting automotive product data across multiple sources with high reliability and throughput.",
+          "responsibilities": [
+            "Built modular scraping services supporting multiple fetch strategies (HTTP, Curl, Puppeteer)",
+            "Implemented parallel processing using AMP for concurrent scraping jobs",
+            "Designed retry and failure recovery mechanisms for unstable targets",
+            "Optimized database writes using batching and deduplication strategies"
+          ],
+          "architecture": [
+            "Queue-based job pipeline using Laravel Queues and Redis",
+            "Parallel workers using amphp/parallel",
+            "Multi-channel scraping (HTTP client, Curl, Puppeteer)",
+            "Caching layer for HTML and processed results",
+            "Separation of scraping, processing, and storage stages"
+          ],
+          "features": [
+            "Dynamic category traversal with recursive processing",
+            "XPath and regex-based extraction engine",
+            "DOM mutation handling for JS-heavy sites",
+            "Automatic retry with state reset for Puppeteer sessions",
+            "Config-driven scraper definitions per target site"
+          ],
+          "metrics": {
+            "records_processed": "30M+",
+            "scale_growth": "700K → 30M records",
+            "concurrency": "Parallel workers with AMP",
+            "reliability": "High success rate with retry handling"
+          },
+          "stack": [
+            "php",
+            "laravel",
+            "redis",
+            "mysql",
+            "puppeteer",
+            "amphp",
+            "curl",
+            "xpath",
+            "typescript",
+            "Quasar framework",
+            "regex"
+          ],
+          "images": [
+            "/img/carInfo/preview.png",
+            "/img/carInfo/scrapeLogs.png",
+            "/img/carInfo/profile.png"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Active Lamp",
+      "role": "Software Engineer",
+      "duration": {
+        "start": "",
+        "end": ""
+      },
+      "summary": "Developed internal tools and frontend-heavy applications with modern JS frameworks.",
+      "projects": [
+        {
+          "name": "upTape",
+          "url": "",
+          "role": "Frontend Developer",
+          "overview": "A lead distribution and tracking platform for automotive sales teams.",
+          "responsibilities": [
+            "Developed reusable UI components using Svelte",
+            "Implemented responsive layouts and state management",
+            "Integrated APIs for dynamic data rendering"
+          ],
+          "architecture": [
+            "Component-based frontend architecture",
+            "State-driven UI updates",
+            "API-driven data flow"
+          ],
+          "features": [
+            "Responsive UI with Tailwind",
+            "Reusable component system",
+            "Optimized rendering performance"
+          ],
+          "metrics": {},
+          "stack": ["svelte", "typescript", "tailwind", "scss", "html", "css", "typescript"],
+          "images": ["/img/upTape/home.png", "/img/upTape/home.png"]
+        },
+        {
+          "name": "upCrm",
+          "url": "",
+          "role": "Frontend Developer",
+          "overview": "A CRM platform designed for managing customer interactions and sales pipelines.",
+          "responsibilities": [
+            "Built interactive dashboards and data views",
+            "Handled complex UI state and user interactions",
+            "Integrated backend APIs"
+          ],
+          "architecture": ["Modular frontend structure", "API-driven architecture"],
+          "features": [
+            "Dynamic data tables",
+            "Form handling and validation",
+            "User-friendly dashboard UI"
+          ],
+          "metrics": {},
+          "stack": ["svelte", "typescript", "tailwind", "scss", "html", "css", "typescript"],
+          "images": ["/img/upCrm/home.png", "/img/upCrm/home.png"]
+        }
+      ]
+    },
+    {
+      "name": "Hipe Japan INC",
+      "role": "Full Stack Developer",
+      "duration": {
+        "start": "",
+        "end": ""
+      },
+      "summary": "Worked on full-stack web applications and backend services.",
+      "projects": [
+        {
+          "name": "AceProQuiz",
+          "url": "",
+          "role": "Full Stack Developer",
+          "overview": "An event aggregation and listing system that collects and organizes event data into a structured, searchable interface. Implemented dynamic content handling and efficient data presentation for better user navigation.",
+          "responsibilities": [
+            "Implemented backend APIs",
+            "Developed frontend interfaces",
+            "Handled database design and optimization"
+          ],
+          "architecture": ["MVC-based backend structure", "API-driven frontend integration"],
+          "features": [
+            "CRUD systems",
+            "Authentication and authorization",
+            "Data management interfaces"
+          ],
+          "metrics": {},
+          "stack": ["php", "laravel", "javascript", "mysql", "jquery"],
+          "images": ["/img/acepro/home.png", "/img/acepro/home.png"]
+        },
+        {
+          "name": "Anicom jobs",
+          "url": "",
+          "role": "Full Stack Developer",
+          "overview": "A niche job platform connecting animal care professionals (veterinarians, groomers, and staff) with employers. Built features for job posting, applicant management, and optimized matching workflows to streamline hiring",
+          "responsibilities": [
+            "Implemented backend APIs",
+            "Developed frontend interfaces",
+            "Handled database design and optimization"
+          ],
+          "architecture": ["MVC-based backend structure", "API-driven frontend integration"],
+          "features": [
+            "CRUD systems",
+            "Authentication and authorization",
+            "Data management interfaces"
+          ],
+          "metrics": {},
+          "stack": ["php", "laravel", "javascript", "mysql", "jquery", "scss"],
+          "images": ["/img/acepro/home.png", "/img/acepro/home.png"]
+        },
+        {
+          "name": "Premium water",
+          "url": "",
+          "role": "Full Stack Developer",
+          "overview": "A large-scale corporate site for a Japanese subscription-based water service.",
+          "responsibilities": [
+            "Implemented backend APIs",
+            "Developed frontend interfaces",
+            "Handled database design and optimization"
+          ],
+          "architecture": ["MVC-based backend structure", "API-driven frontend integration"],
+          "features": [
+            "CRUD systems",
+            "Authentication and authorization",
+            "Data management interfaces"
+          ],
+          "metrics": {},
+          "stack": ["php", "laravel", "javascript", "mysql", "liveWire", "jquery", "scss"],
+          "images": ["/img/premiumWater/home.png", "/img/premiumWater/home.png"]
+        }
+      ]
+    },
+    {
+      "name": "Anchored Protective Services",
+      "role": "Full Stack Developer",
+      "duration": {
+        "start": "",
+        "end": ""
+      },
+      "summary": "Employee Monitoring system",
+      "projects": [
+        {
+          "name": "Monitoring",
+          "url": "",
+          "role": "Full Stack Developer",
+          "overview": "A system that tracks employee attendance, including lateness and absences, with automated deduction calculations and reporting to support payroll and management decisions.",
+          "responsibilities": [
+            "Built backend services",
+            "Developed UI components",
+            "Managed database operations"
+          ],
+          "architecture": ["Full-stack web architecture", "Database-driven system"],
+          "features": ["User management", "Data tracking", "Reporting tools"],
+          "metrics": {},
+          "stack": ["php", "laravel", "Quasar framework", "mysql", "javascript"],
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "UCMED",
+      "role": "Full Stack Developer",
+      "duration": {
+        "start": "",
+        "end": ""
+      },
+      "summary": "Monitoring tool but just and checking for attendance and lates but filter out by each departments",
+      "projects": [
+        {
+          "name": "Monitoring system",
+          "url": "",
+          "role": "Full Stack Developer",
+          "overview": "Developed systems for managing healthcare-related data and workflows.",
+          "responsibilities": [
+            "Built backend APIs",
+            "Handled data processing and storage",
+            "Developed frontend interfaces"
+          ],
+          "architecture": ["Full-stack application architecture", "Secure data handling"],
+          "features": ["Data management", "User interfaces for staff", "Reporting tools"],
+          "metrics": {},
+          "stack": ["php", "laravel", "mysql", "javascript", "jquery"],
+          "images": []
+        }
+      ]
+    }
+  ]
+}
