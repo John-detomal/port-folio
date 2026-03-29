@@ -57,7 +57,8 @@
           "images": [
             "/img/carInfo/preview.png",
             "/img/carInfo/scrapeLogs.png",
-            "/img/carInfo/profile.png"
+            "/img/carInfo/profile.png",
+            "/img/carInfo/sql_count.png"
           ]
         }
       ]
