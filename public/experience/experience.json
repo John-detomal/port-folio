@@ -95,7 +95,7 @@
           ],
           "metrics": {},
           "stack": ["svelte", "typescript", "tailwind", "scss", "html", "css", "typescript"],
-          "images": ["/img/upTape/home.png", "/img/uptape/uptape_home_1.png"]
+          "images": ["/img/upTape/home.png", "/img/upTape/home1.png"]
         },
         {
           "name": "upCrm",
