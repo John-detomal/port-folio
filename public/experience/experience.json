@@ -12,7 +12,7 @@
       "projects": [
         {
           "name": "Distributed Scraping & Data Pipeline",
-          "url": "",
+          "url": "https://product.car.info/",
           "role": "Backend Engineer",
           "overview": "Designed and maintained a scalable scraping system for extracting automotive product data across multiple sources with high reliability and throughput.",
           "responsibilities": [
@@ -37,7 +37,7 @@
           ],
           "metrics": {
             "records_processed": "30M+",
-            "scale_growth": "700K → 30M records",
+            "scale_growth": "700K → 23M records and counting",
             "concurrency": "Parallel workers with AMP",
             "reliability": "High success rate with retry handling"
           },
@@ -81,7 +81,9 @@
           "responsibilities": [
             "Developed reusable UI components using Svelte",
             "Implemented responsive layouts and state management",
-            "Integrated APIs for dynamic data rendering"
+            "Integrated APIs for dynamic data rendering",
+            "Developed SEO friendly",
+            "Test each component via storybook"
           ],
           "architecture": [
             "Component-based frontend architecture",
@@ -105,13 +107,19 @@
           "responsibilities": [
             "Built interactive dashboards and data views",
             "Handled complex UI state and user interactions",
-            "Integrated backend APIs"
+            "Integrated backend APIs",
+            "Developed SEO friendly",
+            "Test each component via storybook"
           ],
-          "architecture": ["Modular frontend structure", "API-driven architecture"],
+          "architecture": [
+            "Component-based frontend architecture",
+            "Modular frontend structure",
+            "API-driven architecture"
+          ],
           "features": [
-            "Dynamic data tables",
-            "Form handling and validation",
-            "User-friendly dashboard UI"
+            "Responsive UI with Tailwind",
+            "Reusable component system",
+            "Optimized rendering performance"
           ],
           "metrics": {},
           "stack": ["svelte", "typescript", "tailwind", "scss", "html", "css", "typescript"],
@@ -137,13 +145,16 @@
           "responsibilities": [
             "Implemented backend APIs",
             "Developed frontend interfaces",
-            "Handled database design and optimization"
+            "Handled database design and optimization",
+            "Design user friendly use cases"
           ],
           "architecture": ["MVC-based backend structure", "API-driven frontend integration"],
           "features": [
             "CRUD systems",
             "Authentication and authorization",
-            "Data management interfaces"
+            "Data filtering",
+            "Data management interfaces",
+            "Admin dashboard"
           ],
           "metrics": {},
           "stack": ["php", "laravel", "javascript", "mysql", "jquery"],
@@ -157,12 +168,16 @@
           "responsibilities": [
             "Implemented backend APIs",
             "Developed frontend interfaces",
+            "Design user friendly use cases",
+            "Help teamates to there task",
+            "Contribute on how to structures or architect backend and frontend",
             "Handled database design and optimization"
           ],
           "architecture": ["MVC-based backend structure", "API-driven frontend integration"],
           "features": [
             "CRUD systems",
             "Authentication and authorization",
+            "Data filtering",
             "Data management interfaces"
           ],
           "metrics": {},
@@ -175,13 +190,19 @@
           "role": "Full Stack Developer",
           "overview": "A large-scale corporate site for a Japanese subscription-based water service.",
           "responsibilities": [
+            "Lead Developer",
+            "Designed the system architecture",
             "Implemented backend APIs",
             "Developed frontend interfaces",
+            "Chose the tech stack",
+            "Documention of use cases, database design Architecture",
             "Handled database design and optimization"
           ],
           "architecture": ["MVC-based backend structure", "API-driven frontend integration"],
           "features": [
             "CRUD systems",
+            "admin sytems",
+            "payment method",
             "Authentication and authorization",
             "Data management interfaces"
           ],
@@ -208,6 +229,7 @@
           "responsibilities": [
             "Built backend services",
             "Developed UI components",
+            "Data management",
             "Managed database operations"
           ],
           "architecture": ["Full-stack web architecture", "Database-driven system"],
@@ -236,9 +258,14 @@
           "responsibilities": [
             "Built backend APIs",
             "Handled data processing and storage",
+            "Developed user interface",
             "Developed frontend interfaces"
           ],
-          "architecture": ["Full-stack application architecture", "Secure data handling"],
+          "architecture": [
+            "MVC-based backend structure",
+            "Full-stack application architecture",
+            "Secure data handling"
+          ],
           "features": ["Data management", "User interfaces for staff", "Reporting tools"],
           "metrics": {},
           "stack": ["php", "laravel", "mysql", "javascript", "jquery"],

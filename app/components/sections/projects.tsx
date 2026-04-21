@@ -43,26 +43,25 @@ export default function ProjectsSection() {
             {company.role && <p className="text-blue-800 italic mt-1">{company.role}</p>}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {company.projects.map((project, idx) => (
               <div
                 key={`${company.name}-${project.name}-${idx}`}
-                className="bg-white rounded-xl shadow-md border border-blue-200 flex flex-col hover:-translate-y-2 transition-transform duration-300 overflow-hidden"
+                className="bg-white rounded-xl shadow-md border border-blue-200 flex flex-col overflow-hidden"
               >
+                {/* IMAGE SLIDER */}
                 {project.images.length > 0 && (
                   <Swiper
                     modules={[Navigation, Autoplay]}
                     navigation
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
                     loop
-                    spaceBetween={0}
-                    slidesPerView={1}
-                    className="relative h-64 md:h-80 w-full" // increased height
+                    className="relative h-64 md:h-80 w-full"
                   >
                     {project.images.map((img, iidx) => (
                       <SwiperSlide key={iidx}>
                         <div
-                          className="relative w-full h-64 md:h-80 cursor-pointer" // match Swiper height
+                          className="relative w-full h-64 md:h-80 cursor-pointer"
                           onClick={() => setLightbox({ open: true, src: img })}
                         >
                           <Image
@@ -70,7 +69,6 @@ export default function ProjectsSection() {
                             alt={`${project.name} screenshot ${iidx + 1}`}
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 500px" // higher size for better resolution
                           />
                         </div>
                       </SwiperSlide>
@@ -78,23 +76,75 @@ export default function ProjectsSection() {
                   </Swiper>
                 )}
 
-                <div className="p-6 flex flex-col flex-1">
+                {/* CONTENT */}
+                <div className="p-6 flex flex-col gap-4">
+                  {/* TITLE */}
                   {project.url ? (
                     <a
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xl font-bold text-blue-800 mb-2 underline"
+                      className="text-xl font-bold text-blue-800 underline"
                     >
                       {project.name}
                     </a>
                   ) : (
-                    <p className="text-xl font-bold text-blue-800 mb-2">{project.name}</p>
+                    <p className="text-xl font-bold text-blue-800">{project.name}</p>
                   )}
-                  <p className="text-blue-700 text-sm mb-4 flex-1">{project.overview}</p>
 
+                  {/* OVERVIEW */}
+                  <p className="text-blue-700 text-sm">{project.overview}</p>
+
+                  {/* METRICS (🔥 HIGH IMPACT) */}
+                  {project.metrics && Object.keys(project.metrics).length > 0 && (
+                    <div className="bg-blue-50 p-3 rounded-md text-xs text-blue-900">
+                      {Object.entries(project.metrics).map(([key, value]) => (
+                        <p key={key}>
+                          <strong>{key.replace('_', ' ')}:</strong> {value}
+                        </p>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* FEATURES */}
+                  {project.features?.length > 0 && (
+                    <div>
+                      <h4 className="font-semibold text-blue-900 text-sm mb-1">Features</h4>
+                      <ul className="list-disc list-inside text-sm text-blue-700">
+                        {project.features.map((f, i) => (
+                          <li key={i}>{f}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* ARCHITECTURE */}
+                  {project.architecture?.length > 0 && (
+                    <div>
+                      <h4 className="font-semibold text-blue-900 text-sm mb-1">Architecture</h4>
+                      <ul className="list-disc list-inside text-sm text-blue-700">
+                        {project.architecture.map((a, i) => (
+                          <li key={i}>{a}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* RESPONSIBILITIES */}
+                  {project.responsibilities?.length > 0 && (
+                    <div>
+                      <h4 className="font-semibold text-blue-900 text-sm mb-1">Responsibilities</h4>
+                      <ul className="list-disc list-inside text-sm text-blue-700">
+                        {project.responsibilities.map((r, i) => (
+                          <li key={i}>{r}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* STACK */}
                   {project.stack.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-auto">
+                    <div className="flex flex-wrap gap-2 pt-2">
                       {project.stack.map((tech, sidx) => (
                         <Stack
                           key={`${tech}-${sidx}`}
@@ -114,6 +164,7 @@ export default function ProjectsSection() {
         </div>
       ))}
 
+      {/* LIGHTBOX */}
       {lightbox.open && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
