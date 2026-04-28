@@ -40,7 +40,12 @@ export default function ProjectsSection() {
             ) : (
               <h2 className="text-2xl font-bold text-blue-900">{company.name}</h2>
             )}
-            {company.role && <p className="text-blue-800 italic mt-1">{company.role}</p>}
+
+            {company.role && (
+              <p className="text-blue-800 italic mt-1">
+                {company.role} {company.duration.start} - {company.duration.end}
+              </p>
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
